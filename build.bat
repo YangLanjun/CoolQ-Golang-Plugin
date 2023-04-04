@@ -2,8 +2,8 @@
 
 :: SET DevDir=D:\CoolQ Pro\dev\me.cqp.tnze.demo
 
-echo Setting proxy
-SET GOPROXY=https://goproxy.cn
+@REM echo Setting proxy
+@REM SET GOPROXY=https://goproxy.cn
 
 echo Checking go installation...
 go version > nul
@@ -19,24 +19,24 @@ IF ERRORLEVEL 1 (
 	goto RETURN
 )
 
-echo Checking cqcfg installation...
-cqcfg -v
-IF ERRORLEVEL 1 (
-	echo Install cqcfg...
-	go get github.com/Tnze/CoolQ-Golang-SDK/tools/cqcfg
-	IF ERRORLEVEL 1 (
-		echo Install cqcfg fail
-		goto RETURN
-	)
-)
-
-echo Generating app.json ...
-go generate
-IF ERRORLEVEL 1 (
-	echo Generate app.json fail
-	goto RETURN
-)
-echo.
+@REM echo Checking cqcfg installation...
+@REM cqcfg -v
+@REM IF ERRORLEVEL 1 (
+@REM 	echo Install cqcfg...
+@REM 	go get github.com/Tnze/CoolQ-Golang-SDK/tools/cqcfg
+@REM 	IF ERRORLEVEL 1 (
+@REM 		echo Install cqcfg fail
+@REM 		goto RETURN
+@REM 	)
+@REM )
+@REM
+@REM echo Generating app.json ...
+@REM go generate
+@REM IF ERRORLEVEL 1 (
+@REM 	echo Generate app.json fail
+@REM 	goto RETURN
+@REM )
+@REM echo.
 
 echo Setting env vars..
 SET CGO_LDFLAGS=-Wl,--kill-at

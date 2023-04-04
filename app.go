@@ -6,7 +6,7 @@ import "github.com/YangLanjun/CoolQ-Golang-SDK/cqp"
 func main() { /*此处应当留空*/ }
 
 func init() {
-	cqp.AppID = "dr.me.demo" // TODO: 修改为这个插件的ID
+	cqp.AppID = "dr.ylj.demo" // TODO: 修改为这个插件的ID
 	cqp.PrivateMsg = onPrivateMsg
 }
 
