@@ -1,16 +1,12 @@
 package main
 
-import "github.com/Tnze/CoolQ-Golang-SDK/cqp"
+import "github.com/YangLanjun/CoolQ-Golang-SDK/cqp"
 
 //go:generate cqcfg -c .
-// cqp: 名称: GoDemo
-// cqp: 版本: 1.0.0:1
-// cqp: 作者: Tnze
-// cqp: 简介: 一个超棒的Go语言插件Demo，它会回复你的私聊消息~
 func main() { /*此处应当留空*/ }
 
 func init() {
-	cqp.AppID = "me.cqp.tnze.demo" // TODO: 修改为这个插件的ID
+	cqp.AppID = "dr.me.demo" // TODO: 修改为这个插件的ID
 	cqp.PrivateMsg = onPrivateMsg
 }
 

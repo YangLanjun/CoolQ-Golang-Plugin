@@ -1,5 +1,5 @@
-module github.com/Tnze/CoolQ-Golang-Plugin
+module github.com/YangLanjun/CoolQ-Golang-Plugin
 
-go 1.14
+go 1.19
 
-require github.com/Tnze/CoolQ-Golang-SDK v1.2.1
+require github.com/YangLanjun/CoolQ-Golang-SDK latest
